@@ -1,0 +1,19 @@
+ERC report (2026-10-04T23:00:07-0400, Encoding UTF8)
+
+***** Sheet /
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(220.9800 mm, 43.1800 mm): No Connect
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(220.9800 mm, 45.7200 mm): No Connect
+[no_connect_connected]: Pin with 'no connection' type is connected
+    ; warning
+    @(220.9800 mm, 43.1800 mm): Symbol U2 Hidden pin 5 [NC, Unconnected, Line]
+    @(220.9800 mm, 43.1800 mm): No Connect
+[no_connect_connected]: Pin with 'no connection' type is connected
+    ; warning
+    @(220.9800 mm, 45.7200 mm): Symbol U2 Hidden pin 8 [NC, Unconnected, Line]
+    @(220.9800 mm, 45.7200 mm): No Connect
+
+ ** ERC messages: 4  Errors 0  Warnings 4

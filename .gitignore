@@ -1,0 +1,16 @@
+# Third-party material: the original DOS software, sample images, reference
+# documents. Find them through the links in README.md; never commit them.
+/dos/
+/samples/
+/ref/
+# Downloaded separately (see tools/kicad/README.md)
+/tools/freerouting
+# Build output
+/app/src-tauri/target/
+/app/src-tauri/gen/
+*.kicad_prl
+*.tmp.kicad_pro
+*-backups/
+hardware/*.dsn
+hardware/*.ses
+hardware/*.zones.json

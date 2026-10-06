@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMUP Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="devices">
+    <div class="brand">EMUP <b>Studio</b></div>
+    <input id="search" type="search" placeholder="Find a chip: 82S129, 2716, 22V10…" autocomplete="off" spellcheck="false">
+    <div id="devlist" class="devlist" role="listbox" aria-label="Chips"></div>
+  </aside>
+
+  <main class="work">
+    <section class="device-head">
+      <div>
+        <div class="eyebrow" id="dev-family">Choose a chip</div>
+        <h1 id="dev-name">No chip selected</h1>
+        <div class="facts" id="dev-facts"></div>
+      </div>
+      <div class="conn">
+        <label for="port">Programmer</label>
+        <select id="port"></select>
+        <div class="conn-note" id="conn-note"></div>
+      </div>
+    </section>
+
+    <section class="middle">
+      <figure class="socket-card">
+        <svg id="socket" viewBox="0 0 220 470" role="img" aria-label="Where the chip goes in the socket"></svg>
+        <figcaption id="socket-cap">The 40-pin socket. Pick a chip to see where it goes.</figcaption>
+      </figure>
+
+      <div class="ops">
+        <div class="buttons">
+          <button id="op-read" data-op="read">Read</button>
+          <button id="op-blank" data-op="blank">Blank check</button>
+          <button id="op-program" data-op="program" class="primary">Program</button>
+          <button id="op-verify" data-op="verify">Verify</button>
+        </div>
+        <div class="progress" aria-live="polite">
+          <div class="bar"><div id="bar-fill"></div></div>
+          <div class="progress-label" id="progress-label">Ready.</div>
+        </div>
+        <div class="log" id="log" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="buffer">
+      <div class="buffer-head">
+        <div>
+          <div class="eyebrow">Buffer</div>
+          <div id="buf-title">Empty: drop a .bin, .hex or .jed file here, or read a chip.</div>
+        </div>
+        <div class="sums" id="buf-sums"></div>
+        <label class="filebtn">Open file…<input id="file" type="file" accept=".bin,.hex,.ihx,.jed,.rom,*/*"></label>
+      </div>
+      <div id="drop" class="hexview" tabindex="0" aria-label="Buffer contents">
+        <div id="hex-spacer"></div>
+        <div id="hex-rows"></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+** Drc report for emup_adapter.kicad_pcb **
+** Created on 2026-10-04T23:00:16-0400 **
+
+** Found 12 DRC violations **
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(0.0000 mm, 80.0000 mm): Segment on Edge.Cuts
+    @(-3.8000 mm, 9.4000 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(0.0000 mm, 80.0000 mm): Segment on Edge.Cuts
+    @(5.0000 mm, 18.6000 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(120.0000 mm, 80.0000 mm): Segment on Edge.Cuts
+    @(54.7700 mm, 89.3400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(120.0000 mm, 80.0000 mm): Segment on Edge.Cuts
+    @(107.9900 mm, 70.1400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(120.0000 mm, 80.0000 mm): Segment on Edge.Cuts
+    @(11.6800 mm, 82.0400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(120.0000 mm, 80.0000 mm): Segment on Edge.Cuts
+    @(19.5600 mm, 71.6200 mm): Segment on F.Silkscreen
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; 2 spokes connected to isolated island)
+    Local override; error
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on B.Cu
+    @(23.2400 mm, 42.5400 mm): PTH pad 29 [GND] of A1
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; 1 spokes connected to isolated island)
+    Local override; error
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on F.Cu
+    @(61.6200 mm, 38.7000 mm): PTH pad 15 [GND] of U4
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; 2 spokes connected to isolated island)
+    Local override; error
+    @(0.5000 mm, 0.5000 mm): Zone [GND] on F.Cu
+    @(61.6200 mm, 33.6200 mm): PTH pad 17 [GND] of U4
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(77.0800 mm, 35.6300 mm): Reference 'R4'
+    @(73.8100 mm, 35.3700 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(77.0800 mm, 27.6300 mm): Reference 'R2'
+    @(73.8100 mm, 27.3700 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(77.0800 mm, 31.6300 mm): Reference 'R3'
+    @(73.8100 mm, 31.3700 mm): Segment on F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
